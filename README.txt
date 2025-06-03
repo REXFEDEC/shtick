@@ -1,74 +1,73 @@
 
-# LLM on a Stick — Offline llama.cpp USB Setup
+# 🦙 llama.cpp USB Portable Setup
 
-This USB pen drive contains an offline, uncensored local LLM powered by [llama.cpp](https://github.com/ggerganov/llama.cpp). It runs on both Linux and Windows — no internet or installation required.
-
----
-
-## What’s Included
-
-* **Linux binary:** `bin/linux/llama-cli`
-* **Windows binary:** `bin/windows/llama-cli.exe`
-* **Model file:** `models/your-model.gguf` (replace with your own model)
-* **Launch scripts:**
-
-  * `run.sh` for Linux
-  * `run.bat` for Windows
+**Turn any PC into a mini AI powerhouse — no install hassles, just plug & play with your USB drive!**
 
 ---
 
-## Requirements
+## 🚀 What’s This?
 
-* At least 8 GB RAM recommended for smooth operation.
-* USB drive mounted automatically by your OS.
+A *lightweight*, *cross-platform* build of **llama.cpp** designed to run directly from a USB stick.  
+Bring your favorite AI models wherever you go, no dependencies, no internet required!
 
 ---
 
-## How to Use
+## 🔥 Features
 
-### Linux
+- **Plug & Play**: Run your AI models straight from a USB drive on Linux or Windows.
+- **Optimized for Mistral 7B**: Works perfectly with `capybarahermes-2.5-mistral-7b.Q5_K_M.gguf`.
+- **Minimal Setup**: Just download the binaries, copy your model, and launch the included scripts.
+- **Cross-platform Binaries**: Windows `.exe` and Linux binaries ready to roll.
+- **Simple Scripts**: `.sh` and `.bat` scripts to run your model easily with one command.
+- **Lightweight & Fast**: Efficient RAM usage (~8GB max) for smooth AI inference on mid-tier machines.
 
-1. Plug in the USB drive.
-2. Open a terminal and navigate to the USB root folder.
-3. Run the launcher script:
+---
 
-```bash
-./run.sh
+## 🛠️ How to Use
+
+1. **Download the model** and rename it to `your-model.gguf`.
+2. **Copy binaries + scripts + model** to your USB drive.
+3. Run the appropriate script:
+   - On **Linux**: `./run-linux.sh`
+   - On **Windows**: `run-win.bat`
+4. Chat, generate, or run your AI-powered workflows anywhere!
+
+---
+
+## 📂 Folder Structure
+
 ```
+/bin
+   ├─ linux (all Linux binaries)
+/bin
+   ├─ win (all Windows binaries)
 
-This starts the llama.cpp CLI with your model.
+models
+   └─ placeholder.txt (Put your `.gguf` model file here!)
 
----
-
-### Windows
-
-1. Insert the USB drive.
-2. Open the USB folder in File Explorer.
-3. Double-click `run.bat` to launch the model.
-
----
-
-## Customizing
-
-* Replace `models/your-model.gguf` with any `.gguf` model file.
-* Adjust command-line parameters in `run.sh` or `run.bat` as needed.
-* You can add more models in the `models/` folder and launch them by modifying the scripts.
-
----
-
-## Troubleshooting
-
-* Ensure the USB drive is properly mounted.
-* If you run out of RAM, try reducing thread count or using smaller models.
-* On Linux, you may need to give execute permission to `run.sh`:
-
-```bash
-chmod +x run.sh
+run-linux.sh
+run-win.bat
+README.md
 ```
 
 ---
 
-## License and Credits
+## ⚠️ Notes
 
-* Powered by [llama.cpp](https://github.com/ggerganov/llama.cpp)
-* Model files are not included due to licensing — you must download or convert your own.
+- Don’t commit your `.gguf` model file to GitHub (too big!). Use the `placeholder.txt` in `models/` as a reminder.
+- Make sure your system meets the minimum RAM requirements (~8GB).
+- Tested on Arch Linux and Windows 10/11.
+
+---
+
+## 🤝 Contribute & Collaborate
+
+Feel free to fork, improve, or suggest features!  
+Questions? Hit me up [@REXFEDEC](https://github.com/REXFEDEC)
+
+---
+
+## 💡 Inspiration
+
+Built as a **college project** with the idea of making AI models portable and hassle-free.  
+Because AI should travel with you, not just stay locked on one machine!
