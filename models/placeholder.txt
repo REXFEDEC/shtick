@@ -1,0 +1,4 @@
+add your model file here
+preferrable name: 'your-model.gguf'
+if you use a different name
+update the batch and the .sh file
