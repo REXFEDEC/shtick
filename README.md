@@ -1,7 +1,8 @@
 <p align="center">
-    <img src="logo.png" alt="Shtick Logo">
+    <img src="logo.png" alt="Shtick Logo" width="200"/>
 </p>
-# shtick
+
+## shtick
 
 A college project to have offline llm's on a stick
 
